@@ -10,7 +10,6 @@ import { Events } from "../typings/interfaces/Events";
 // structures
 import { RowManager } from "../structures/RowManager";
 import { DEFAULT_TABLE } from "../../constants";
-import { deftable } from "../../types";
 // definitions
  
 export class ByteDatabase extends Emitter<Events> {
