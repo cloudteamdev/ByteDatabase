@@ -1,0 +1,16 @@
+{
+  "compilerOptions":{
+      "target":"ESNext",
+      "experimentalDecorators":true,
+      "module":"CommonJS",
+      "rootDir":".",
+      "resolveJsonModule":true,
+      "outDir":"dist",
+      "esModuleInterop":true,
+      "forceConsistentCasingInFileNames":true,
+      "strict":true,
+      "skipLibCheck":true,
+      "noImplicitAny":true,
+      "suppressImplicitAnyIndexErrors": true
+  }
+}
