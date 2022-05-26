@@ -1,9 +1,9 @@
+import { DEFAULT_TABLE } from "../../constants";
 import { ByteDatabase } from "../core/ByteDatabase";
 import { sanitize } from "../functions/sanitize";
-var deftable = "DEFAULT_BYTE_TABLE"
 
 export class RowManager {
-    database: any
+    database: ByteDatabase
     constructor(db: ByteDatabase){
         this.database = db
     }
@@ -11,7 +11,7 @@ export class RowManager {
     insertRowByKey(
         key: string, 
         value: any, 
-        table: any = deftable
+        table: string = DEFAULT_TABLE
         ){
             const strjson = JSON.stringify(value);
             const q = sanitize(`INSERT INTO ${table} (ID,Json) VALUES (?,?)`);
@@ -21,7 +21,7 @@ export class RowManager {
         updateRowByKey(
         key: string, 
         value: any, 
-        table: any = deftable
+        table: string = DEFAULT_TABLE
         ){
             const strjson = JSON.stringify(value);
 
@@ -33,7 +33,7 @@ export class RowManager {
 
         findRowByKey(
             key: string,
-            table: any = deftable
+            table: string = DEFAULT_TABLE
         ){
             let q = sanitize(`SELECT Json FROM ${table} WHERE ID = @key`)
             let val = this.database.raw.prepare(q).get({ key })
@@ -41,7 +41,7 @@ export class RowManager {
         }
 
      deleteAllRows(
-         table: any = deftable
+         table: string = DEFAULT_TABLE
          ){
             return this.database.raw.prepare(`DELETE FROM ${table}`).run().changes;
         }

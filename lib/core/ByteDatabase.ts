@@ -9,8 +9,8 @@ import { DefaultByteProperties } from '../typings/types/DBP';
 import { Events } from "../typings/interfaces/Events";
 // structures
 import { RowManager } from "../structures/RowManager";
+import { DEFAULT_TABLE } from "../../constants";
 // definitions
-const deftable = { table: "DEFAULT_BYTE_TABLE" };
  
 export class ByteDatabase extends Emitter<Events> {
     /**
@@ -28,7 +28,7 @@ export class ByteDatabase extends Emitter<Events> {
       * @property rows
       * row handler for the database
       */
-     private rows: any = new RowManager(this)
+     private rows: RowManager = new RowManager(this)
      /**
       * 
       * @param paths
@@ -42,7 +42,7 @@ export class ByteDatabase extends Emitter<Events> {
          this.raw = new Database(path, props)
         }
 
-        public insert(key: string, val: any, table: any = deftable) {
+        public insert(key: string, val: string, table: string = DEFAULT_TABLE) {
             if(typeof key !== "string") throw new ByteError("INVALID_TYPE", `Expected a type of string in method "INSERT". Recieved a type of ${typeof key} instead. \n If you need help, consider joining our Discord Server!: https://join.cloudteam.me`);
             if(val === null) throw new ByteError("MISSING_ARGUMENT", `Expected 2 arguments in method "INSERT" . \n If you need help, consider joining our Discord Server!: https://join.cloudteam.me`);
             
@@ -52,39 +52,39 @@ export class ByteDatabase extends Emitter<Events> {
                 let got = this.find(ParentKey);
                 let _ = set(got ?? {}, splitted.slice(1).join("."), val);
                 
-                return this.rows.insertRowByKey(ParentKey, _, table.table);
+                return this.rows.insertRowByKey(ParentKey, _, table);
             } else {
                 let got = this.find(key);
                 let _ = set(got ?? {}, key, val);
 
-                return this.rows.insertRowByKey(key, _, table.table);
+                return this.rows.insertRowByKey(key, _, table);
             }
         }
 
-        public find(key: any, table: any = deftable) {
+        public find(key: string, table: string = DEFAULT_TABLE) {
             if(typeof key !== "string") throw new ByteError("INVALID_TYPE", `Expected a type of string in method "INSERT". Recieved a type of ${typeof key} instead. \n If you need help, consider joining our Discord Server!: https://join.cloudteam.me`);
             if(!key.includes(".")){
-                let result = this.rows.findRowByKey(key, table.table);
+                let result = this.rows.findRowByKey(key, table);
                 let _ = get(result, key);
                 return _
             } else {
                 let splitted = key.split(".");
                 let ParentKey = splitted[0];
 
-                const result = this.rows.findRowByKey(ParentKey, table.table);
+                const result = this.rows.findRowByKey(ParentKey, table);
                 let _ = get(result, splitted.slice(1).join("."));
                 return _
             }
         }
 
-       public wipe(table: any = deftable) {
-           return this.rows.deleteAllRows(table.table)
+       public wipe(table: string = DEFAULT_TABLE) {
+           return this.rows.deleteAllRows(table)
        }
 
         public connect(): void{
             console.log(`${chalk.green.bold("[ByteDatabase (Connection)]:")} Initializing default table...`)
             try {
-                this.raw.prepare(`CREATE TABLE IF NOT EXISTS ${deftable.table} (ID TEXT, Json TEXT)`)
+                this.raw.prepare(`CREATE TABLE IF NOT EXISTS ${DEFAULT_TABLE} (ID TEXT, Json TEXT)`)
             .run()
             console.log(`${chalk.green.bold("[ByteDatabase (Connection)]:")} Successfully initialized default table.`)
         } catch(error) {
