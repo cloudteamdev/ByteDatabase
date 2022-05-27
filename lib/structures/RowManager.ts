@@ -1,4 +1,4 @@
-import { ByteDatabase } from "../core/ByteDatabase";
+mport { ByteDatabase } from "../core/ByteDatabase";
 
 export class RowManager {
     _database: ByteDatabase
@@ -6,12 +6,12 @@ export class RowManager {
         this._database = db
     }
 
-    insertRowByKey(key: string, value: any, table: string){
+    insertRowByKey(key: string, value: Record<string, unknown> | string | unknown[], table: string){
         const val = value !== "string" ? JSON.stringify(value) : value;
         return this._database._raw.prepare(`INSERT INTO ${table} (ID,Json) VALUES (?,?)`).run(key, val)
     }
     
-    updateRowByKey(key: string, value: any, table: string ){
+    updateRowByKey(key: string, value: Record<string, unknown> | string | unknown[], table: string ){
         const val = value !== "string" ? JSON.stringify(value) : value;
         return this._database._raw.prepare(`UPDATE ${table} SET Json = (?) WHERE ID = (?)`).run(key, val)
     }
