@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# bdb
-ruben pls update 
-=======
-# bdb
-ruben pls update 
->>>>>>> 0673c2c2b2c4388d12e104e7b0a501ad02bfba45
+# ByteDatabase
+a cleanup and a more optimized update with docs and more methods will be coming soon.
+eta: before june 7th
