@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "oriel-beck",
+      "name": "oriel-beck",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72157108?v=4",
+      "profile": "https://github.com/oriel-beck",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ByteDatabase",
+  "projectOwner": "cloudteamdev",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
