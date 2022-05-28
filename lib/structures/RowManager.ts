@@ -1,4 +1,4 @@
-mport { ByteDatabase } from "../core/ByteDatabase";
+import { ByteDatabase } from "../core/ByteDatabase";
 
 export class RowManager {
     _database: ByteDatabase
