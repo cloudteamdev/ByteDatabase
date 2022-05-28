@@ -1,14 +1,11 @@
 # ByteDatabase - database for beginners. 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 <div align="center">
   <p><img src="https://cdn.discordapp.com/attachments/979835741930655854/979845371163451412/bytedb_banner.png" alt="ByteDB Logo Wide" /></p>
   <p>
     <a href="https://join.cloudteam.me"><img src="https://img.shields.io/discord/934070836619518082?color=%237289da&label=DIscord&style=for-the-badge" alt="Discord server" /></a>
     <a href="https://www.npmjs.com/package/byte.db"><img src="https://img.shields.io/npm/v/byte.db.svg?style=for-the-badge&logo=appveyor&maxAge=3600" alt="NPM version" /></a>
     <a href="https://www.npmjs.com/package/byte.db"><img src="https://img.shields.io/npm/dt/byte.db.svg?style=for-the-badge&logo=appveyor&maxAge=3600" alt="NPM downloads" /></a>
+    <a hred="#contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=for-the-badge&logo=appveyor" alt="Contributor Count"/></a>
     <a href="https://www.buymeacoffee.com/cloudteam"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshields-io-buymeacoffee.vercel.app%2Fapi%3Fusername%3Dcloudteam%26type%3Dpatrons&style=for-the-badge&logo=appveyor" alt="Buy me a coffee!" /></a>
   </p>
 </div>
@@ -60,13 +57,12 @@ snippets:<br>
    ```
 _for more detailed examples check out our guide [here](https://github.com/cloudteamdev/ByteDatabase/docs/guide.md#methods)_
 
-## Credits
 This database is an official project by the [CloudTeam](https://cloudteam.me) and is managed by [avonryle#2022](https://github.com/avonryle) in discord. <br>
-... other people will be posted later
 
 ## Contributors ✨
+This database is an official project by the [CloudTeam](https://cloudteam.me) and is managed by [avonryle#2022](https://github.com/avonryle) atiscord.
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people who contributed to this project:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -81,5 +77,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
