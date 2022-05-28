@@ -60,7 +60,7 @@ _for more detailed examples check out our guide [here](https://github.com/cloudt
 This database is an official project by the [CloudTeam](https://cloudteam.me) and is managed by [avonryle#2022](https://github.com/avonryle) in discord. <br>
 
 ## Contributors ✨
-This database is an official project by the [CloudTeam](https://cloudteam.me) and is managed by [avonryle#2022](https://github.com/avonryle) atiscord.
+This database is an official project by the [CloudTeam](https://cloudteam.me) and is managed by [avonryle#2022](https://github.com/avonryle) at discord.
 
 Thanks goes to these wonderful people who contributed to this project:
 
