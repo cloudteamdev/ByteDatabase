@@ -1,4 +1,7 @@
 # ByteDatabase - database for beginners. 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <div align="center">
   <p><img src="https://cdn.discordapp.com/attachments/979835741930655854/979845371163451412/bytedb_banner.png" alt="ByteDB Logo Wide" /></p>
@@ -60,3 +63,23 @@ _for more detailed examples check out our guide [here](https://github.com/cloudt
 ## Credits
 This database is an official project by the [CloudTeam](https://cloudteam.me) and is managed by [avonryle#2022](https://github.com/avonryle) in discord. <br>
 ... other people will be posted later
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/oriel-beck"><img src="https://avatars.githubusercontent.com/u/72157108?v=4?s=100" width="100px;" alt=""/><br /><sub><b>oriel-beck</b></sub></a><br /><a href="https://github.com/cloudteamdev/ByteDatabase/commits?author=oriel-beck" title="Code">💻</a> <a href="https://github.com/cloudteamdev/ByteDatabase/issues?q=author%3Aoriel-beck" title="Bug reports">🐛</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
