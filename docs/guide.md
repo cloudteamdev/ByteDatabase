@@ -9,14 +9,14 @@
 
 ### new ByteDatabase([*path*, *props*])
 Creates a new Database connection, in case the file is not created; a file is created for you*.
-You can create a in-memory database by passing `:memory:` as the first argument.
+You can create an in-memory database by passing `:memory:` as the first argument.
 
 <b>Path</b>: The pathway for the database file, defaulting to the memory of the project <br>
 <b>Props</b>: Properties of the extended Database. <br>
 - `props.readonly`: open the database in readonly mode, defaulting to `false`.
-- `props.fileMustExist`: ensure that the file should exist for the database to work, defaultng to `false`.
-- `props.timeout`: the number of milliseconds to wait when executing queries on a locked databasebefore throwing a SQLITE_BUSY error, defaulting to `5000`.
-- `props.verbose`: provide a function that gets called with every SQL string executed by the database connection, defaulting to `null`.
+- `props.fileMustExist`: ensure that the file should exist for the database to work, defaulting to `false`.
+- `props.timeout`: the number of milliseconds to wait when executing queries on a locked database before throwing a SQLITE_BUSY error, defaulting to `5000`.
+- `props.verbose`: a function that gets called with every SQL string executed by the database connection, defaulting to `null`.
 ```ts
 const bytedb = new ByteDatabase("helloworld.db", { verbose: console.log, timeout: 10000 })
 ```
