@@ -1,4 +1,4 @@
-export interface Events {
-    init: () => void
-    dataSet: (val: unknown) => void
+export type Events = {
+    init: [];
+    dataSet: [val: unknown];
 }
