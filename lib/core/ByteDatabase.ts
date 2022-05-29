@@ -6,8 +6,9 @@ import { DefaultByteProperties } from '../typings/types/DBP';
 import { RowManager } from "../structures/RowManager";
 import { DEFAULT_TABLE } from "../util/constants";
 import { createTable } from '../functions/createTable'
+import { Events } from "../typings/interfaces/Events";
 
-export class ByteDatabase extends EventEmitter {
+export class ByteDatabase extends EventEmitter<Events> {
     /**
      * 
      * @property raw
