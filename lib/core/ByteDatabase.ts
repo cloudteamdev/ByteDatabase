@@ -1,14 +1,13 @@
 import { ByteError } from "./ByteError";
 import Database from 'better-sqlite3';
 import { set, get } from 'lodash';
-import EventEmitter from '@tbnritzdoge/events';
+import EventEmitter from '@tbnritzdoge/events'
 import { DefaultByteProperties } from '../typings/types/DBP';
 import { RowManager } from "../structures/RowManager";
 import { DEFAULT_TABLE } from "../util/constants";
 import { createTable } from '../functions/createTable'
-import { Events } from "../typings/interfaces/Events";
 
-export class ByteDatabase extends EventEmitter<Events> {
+export class ByteDatabase extends EventEmitter {
     /**
      * 
      * @property raw
