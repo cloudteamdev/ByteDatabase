@@ -5,7 +5,7 @@
 - [ByteDatabase#all()](#alltable)
 - [ByteDatabase#wipe()](#wipetable)
 - [ByteDatabase#delete()](#deletekey-table)
-- [ByteDatabase#createTable()](#.createTable())
+- [ByteDatabase#createTable()](#createtablename)
 
 ### new ByteDatabase([*path*, *props*])
 Creates a new Database connection, in case the file is not created; a file is created for you*.
@@ -55,7 +55,7 @@ bytedb.delete("helloworld")
 // { changes: 0, lastInsertRowid: 0 }
 ```
 
-## .createTable(*table*)
+## .createTable(*name*)
 Creates a new table under the given table name.
 ```ts
 bytedb.createTable("worlds")
