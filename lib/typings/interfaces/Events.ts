@@ -1,4 +1,3 @@
 export type Events = {
-    init: [];
-    dataSet: [val: unknown];
+    debug: [string];
 }
