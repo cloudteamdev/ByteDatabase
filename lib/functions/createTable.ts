@@ -1,12 +1,11 @@
 import { ByteDatabase } from "../core/ByteDatabase";
 import { ByteError } from "../core/ByteError";
+import { CREATE_TABLE_REGEX } from "../util/constants";
 
 export function createTable(name: string, db: ByteDatabase) {
-    const regex = /[A-z0-9]+/
-    if (regex.test(name)) {
-        const q = `CREATE TABLE IF NOT EXISTS ${name} (ID TEXT, Json TEXT)`;
-        return db._raw.prepare(q).run()
+    if (CREATE_TABLE_REGEX.test(name)) {
+        return db._raw.prepare(`CREATE TABLE IF NOT EXISTS ${name} (ID TEXT, Json TEXT)`).run()
     } else {
-        throw new ByteError("INVALID_TABLE_NAME", `${name} does not follow the regex ${regex}`)
+        throw new ByteError("INVALID_TABLE_NAME", `${name} does not follow the regex ${CREATE_TABLE_REGEX}`)
     }
 }

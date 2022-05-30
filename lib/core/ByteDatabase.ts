@@ -61,15 +61,13 @@ export class ByteDatabase extends EventEmitter<Events> {
         if (typeof key !== "string") throw new ByteError("INVALID_TYPE", `Expected a type of string in method "INSERT". Recieved a type of ${typeof key} instead. \n If you need help, consider joining our Discord Server!: https://join.cloudteam.me`);
         if (!key.includes(".")) {
             let result = this._rows.findRowByKey(key, table);
-            let _ = get(result, key);
-            return _
+            return get(result, key);
         } else {
             let splitted = key.split(".");
             let ParentKey = splitted[0];
 
             const result = this._rows.findRowByKey(ParentKey, table);
-            let _ = get(result, splitted.slice(1).join("."));
-            return _
+            return get(result, splitted.slice(1).join("."));
         }
     }
 
