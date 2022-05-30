@@ -21,5 +21,5 @@ Make sure there are no spaces in your project path: `node-gyp` may not escape sp
 2. run `npm install`
 
 ## If none of the above work...
-Join the official CloudTeam Discord server [here](https://join.cloudteam.me) or create an Issue here
+Join the official CloudTeam Discord server [here](https://join.cloudteam.me) or create an [issue](https://github.com/cloudteamdev/ByteDatabase/issues)
 #### [source for the troubleshooting](https://github.com/WiseLibs/better-sqlite3/blob/master/docs/troubleshooting.md)
