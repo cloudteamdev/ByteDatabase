@@ -27,7 +27,11 @@ Using NPM:
 ```
 npm i byte.db
 ```
-_If you're having issues with installing, please read our troubleshooting guide [here](https://github.com/cloudteamdev/ByteDatabase/docs/troubleshooting.md)_
+Installing the dev build:
+```
+npm i https://github.com/cloudteamdev/ByteDatabase
+```
+_If you're having issues with installing, please read our troubleshooting guide [here](https://github.com/cloudteamdev/ByteDatabase/blob/main/docs/troubleshooting.md)_
 
 ## Changelog
 nothing yet
@@ -55,7 +59,7 @@ snippets:<br>
    ```ts
    bytedb.find("hello_world") // helloworld
    ```
-_for more detailed examples check out our guide [here](https://github.com/cloudteamdev/ByteDatabase/docs/guide.md#methods)_
+_for more detailed examples check out our guide [here](https://github.com/cloudteamdev/ByteDatabase/blob/main/docs/guide.md)_
 
 This database is an official project by the [CloudTeam](https://cloudteam.me) and is managed by [avonryle#2022](https://github.com/avonryle) in discord. <br>
 
