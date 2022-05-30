@@ -61,5 +61,3 @@ Creates a new table under the given table name.
 bytedb.createTable("worlds")
 // { changes: 0, lastInsertRowid: 0 }
 ```
-```
-
