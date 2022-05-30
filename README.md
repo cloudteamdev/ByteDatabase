@@ -1,4 +1,4 @@
-# ByteDatabase - database for beginners. 
+# <p align="center"> ByteDatabase: Built for Beginners </p>
 <div align="center">
   <p><img src="https://cdn.discordapp.com/attachments/979835741930655854/979845371163451412/bytedb_banner.png" alt="ByteDB Logo Wide" /></p>
   <p>
@@ -15,7 +15,7 @@
 - [Installation](#installation)
 - [Changelog](#changelog)
 - [Quick Examples](#quick-examples)
-- [Credits](#credits)
+- [Contributors](#contributors-)
 
 ## Features
 - <b>Persistent Storage</b>: Data stored won't disappear through restarts.
