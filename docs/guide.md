@@ -49,7 +49,7 @@ bytedb.wipe()
 ```
 
 ### .delete(*key*, [*table*])
-Deletes an item from a specified table
+Deletes an item from a specified table.
 ```ts
 bytedb.delete("helloworld")
 // { changes: 0, lastInsertRowid: 0 }
