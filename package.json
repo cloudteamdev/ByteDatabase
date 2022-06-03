@@ -1,6 +1,6 @@
 {
   "name": "byte.db",
-  "version": "1.0.0", // patched version. the current version is 1.0.0-beta.7
+  "version": "1.0.0",
   "description": "Easy to use wrapper for better-sqlite3. Built specially for beginners.",
   "main": "dist/index.js",
   "scripts": {
