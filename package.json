@@ -1,23 +1,39 @@
 {
   "name": "byte.db",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Easy to use wrapper for better-sqlite3. Built specially for beginners.",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prettier": "prettier --write ."
   },
   "keywords": [
-    "database", "db",
-    "bytedb", "byte.db",
-    "better-sqlite3", "sqlite3",
-    "sqlite", "sql",
+    "database",
+    "db",
+    "bytedb",
+    "byte.db",
+    "better-sqlite3",
+    "sqlite3",
+    "sqlite",
+    "sql",
     "framework"
   ],
   "author": "cloudteamdev",
   "contributors": [
-    "avonryle",
-    "orielprogram",
-    "ruben40000"
+    {
+      "name": "avonryle",
+      "email": "avonryle@cloudteam.me",
+      "url": "https://github.com/avonryle"
+    },
+    {
+      "name": "oriel-beck",
+      "url": "https://github.com/oriel-beck"
+    },
+    {
+      "name": "ruben",
+      "email": "ruben@cloudteam.me",
+      "url": "https://github.com/Rubenennj"
+    }
   ],
   "devDependencies": {
     "@types/better-sqlite3": "^7.5.0",
