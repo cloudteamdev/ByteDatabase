@@ -1,3 +1,3 @@
 export type Events = {
-  debug: [string];
+  debug: [Function];
 };
