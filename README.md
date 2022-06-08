@@ -74,6 +74,7 @@ Thanks goes to these wonderful people who contributed to this project:
 <table>
   <tr>
     <td align="center"><a href="https://github.com/oriel-beck"><img src="https://avatars.githubusercontent.com/u/72157108?v=4?s=100" width="100px;" alt=""/><br /><sub><b>oriel-beck</b></sub></a><br /><a href="https://github.com/cloudteamdev/ByteDatabase/commits?author=oriel-beck" title="Code">💻</a> <a href="https://github.com/cloudteamdev/ByteDatabase/issues?q=author%3Aoriel-beck" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/Rubenennj"><img src="https://avatars.githubusercontent.com/u/57841770?v=4?s=100" width="100px;" alt=""/><br /><sub><b>YuzuTheNeko</b></sub></a><br /><a href="https://github.com/cloudteamdev/ByteDatabase/commits?author=Rubenennj" title="Code">💻</a> <a href="https://github.com/cloudteamdev/ByteDatabase/issues?q=author%3ARubenennj" title="Bug reports">🐛</a> <a href="#ideas-Rubenennj" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
