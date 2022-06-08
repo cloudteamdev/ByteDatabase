@@ -5,9 +5,9 @@ import { wipe } from './wipe';
 import { del } from './delete';
 
 export const methods = {
-  insert: insert,
-  find: find,
-  all: all,
-  wipe: wipe,
-  delete: del,
-};
+  insert,
+  all,
+  wipe,
+  find,
+  delete: del
+} as const;

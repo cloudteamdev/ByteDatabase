@@ -3,6 +3,7 @@ import { ByteError } from '../structures/ByteError';
 import { DEFAULT_TABLE } from '../util/constants';
 import { set } from 'lodash';
 import { RowManager } from '../structures/RowManager';
+import { Data } from '../typings/types/Data';
 
 export function insert(
   key: string,
@@ -26,14 +27,14 @@ export function insert(
   if (key.includes('.')) {
     let splitted = key.split('.');
     let ParentKey = splitted[0];
-    let got = db.find(ParentKey);
+    let got = db.find(ParentKey) as object;
     let _ = set(got ?? {}, splitted.slice(1).join('.'), value);
 
-    return _rows.insertRowByKey(ParentKey, _, table);
+    return _rows.insertRowByKey(ParentKey, _ as Data, table);
   } else {
-    let got = db.find(key);
+    let got = db.find(key) as object;
     let _ = set(got ?? {}, key, value);
 
-    return _rows.insertRowByKey(key, _, table);
+    return _rows.insertRowByKey(key, _ as Data, table);
   }
 }
