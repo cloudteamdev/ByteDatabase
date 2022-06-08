@@ -3,8 +3,8 @@ import { CREATE_TABLE_REGEX } from '../util/constants';
 import { ByteError } from './ByteError';
 
 export class Table {
-  private _database: ByteDatabase;
-  private _tableName: string;
+  private readonly _database: ByteDatabase;
+  private readonly _tableName: string;
 
   constructor(name: string, db: ByteDatabase) {
     this._database = db;

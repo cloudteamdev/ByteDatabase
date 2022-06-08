@@ -9,20 +9,20 @@ import { Events } from './typings/types/Events';
 import { DEFAULT_TABLE } from './util/constants';
 import { methods } from './methods/exportMethods';
 import { findTables } from './functions/findTables';
+import { Data } from './typings/types/Data';
+import { sanitize } from './functions/sanitize';
 
-export class ByteDatabase extends EventEmitter<Events> {
-  public _raw: TypeDatabase;
-  public options: DefaultByteProperties;
+export class ByteDatabase<T extends Data = Data> extends EventEmitter<Events> {
+  public readonly _raw: TypeDatabase;
 
   constructor(
-    path: string,
-    options: DefaultByteProperties = {
+    path = ':memory:',
+    public readonly options: DefaultByteProperties = {
       sanitize: true,
     },
   ) {
     super();
 
-    path ??= ":memory:"
     this.options = options;
     this._raw = new Database(path, options);
     this._raw
@@ -32,20 +32,24 @@ export class ByteDatabase extends EventEmitter<Events> {
       .run();
   }
 
-  public findTables() {
+  private trySanitize(what: string) {
+    return this.options.sanitize ? sanitize(what) : what
+  }
+
+  public findTables(): any[] {
     return findTables(this);
   }
 
-  public insert(key: string, val: any, table: string = DEFAULT_TABLE) {
+  public insert(key: string, val: T, table: string = DEFAULT_TABLE): Database.RunResult {
     return methods.insert(key, val, table, this);
   }
 
-  public find(key: string, table: string = DEFAULT_TABLE) {
+  public find(key: string, table: string = DEFAULT_TABLE): T {
     return methods.find(key, table, this);
   }
 
-  public all(table: string = DEFAULT_TABLE) {
-    return methods.all(table, this);
+  public all(table: string = DEFAULT_TABLE): T[] {
+    return methods.all(table, this) as T[];
   }
 
   public wipe(table: string = DEFAULT_TABLE) {
