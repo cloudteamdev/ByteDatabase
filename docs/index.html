@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="default">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>byte.db</title>
+    <meta name="description" content="Documentation for byte.db" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/highlight.css" />
+    <script async src="assets/search.js" id="search-script"></script>
+  </head>
+  <body>
+    <script>
+      document.body.classList.add(localStorage.getItem('tsd-theme') || 'os');
+    </script>
+    <header>
+      <div class="tsd-page-toolbar">
+        <div class="container">
+          <div class="table-wrap">
+            <div class="table-cell" id="tsd-search" data-base=".">
+              <div class="field">
+                <label
+                  for="tsd-search-field"
+                  class="tsd-widget search no-caption"
+                  >Search</label
+                ><input type="text" id="tsd-search-field" />
+              </div>
+              <ul class="results">
+                <li class="state loading">Preparing search index...</li>
+                <li class="state failure">The search index is not available</li>
+              </ul>
+              <a href="index.html" class="title">byte.db</a>
+            </div>
+            <div class="table-cell" id="tsd-widgets">
+              <div id="tsd-filter">
+                <a
+                  href="#"
+                  class="tsd-widget options no-caption"
+                  data-toggle="options"
+                  >Options</a
+                >
+                <div class="tsd-filter-group">
+                  <div class="tsd-select" id="tsd-filter-visibility">
+                    <span class="tsd-select-label">All</span>
+                    <ul class="tsd-select-list">
+                      <li data-value="public">Public</li>
+                      <li data-value="protected">Public/Protected</li>
+                      <li data-value="private" class="selected">All</li>
+                    </ul>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="tsd-filter-inherited"
+                    checked
+                  /><label class="tsd-widget" for="tsd-filter-inherited"
+                    >Inherited</label
+                  ><input
+                    type="checkbox"
+                    id="tsd-filter-externals"
+                    checked
+                  /><label class="tsd-widget" for="tsd-filter-externals"
+                    >Externals</label
+                  >
+                </div>
+              </div>
+              <a href="#" class="tsd-widget menu no-caption" data-toggle="menu"
+                >Menu</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tsd-page-title">
+        <div class="container"><h1>byte.db</h1></div>
+      </div>
+    </header>
+    <div class="container container-main">
+      <div class="row">
+        <div class="col-8 col-content">
+          <div class="tsd-panel tsd-typography">
+            <a
+              href="#-bytedatabase-built-for-beginners-"
+              id="-bytedatabase-built-for-beginners-"
+              style="color: inherit; text-decoration: none"
+            >
+              <h1><p align="center">ByteDatabase: Built for Beginners</p></h1>
+            </a>
+            <div align="center">
+              <p>
+                <img
+                  src="https://cdn.discordapp.com/attachments/979835741930655854/979845371163451412/bytedb_banner.png"
+                  alt="ByteDB Logo Wide"
+                />
+              </p>
+              <p>
+                <a href="https://join.cloudteam.me"
+                  ><img
+                    src="https://img.shields.io/discord/934070836619518082?color=%237289da&label=DIscord&style=for-the-badge"
+                    alt="Discord server"
+                /></a>
+                <a href="https://www.npmjs.com/package/byte.db"
+                  ><img
+                    src="https://img.shields.io/npm/v/byte.db.svg?style=for-the-badge&logo=appveyor&maxAge=3600"
+                    alt="NPM version"
+                /></a>
+                <a href="https://www.npmjs.com/package/byte.db"
+                  ><img
+                    src="https://img.shields.io/npm/dt/byte.db.svg?style=for-the-badge&logo=appveyor&maxAge=3600"
+                    alt="NPM downloads"
+                /></a>
+                <a hred="#contributors"
+                  ><img
+                    src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=for-the-badge&logo=appveyor"
+                    alt="Contributor Count"
+                /></a>
+                <a href="https://www.buymeacoffee.com/cloudteam"
+                  ><img
+                    src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshields-io-buymeacoffee.vercel.app%2Fapi%3Fusername%3Dcloudteam%26type%3Dpatrons&style=for-the-badge&logo=appveyor"
+                    alt="Buy me a coffee!"
+                /></a>
+              </p>
+            </div>
+
+            <a
+              href="#table-of-content"
+              id="table-of-content"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Table of Content</h2>
+            </a>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#installation">Installation</a></li>
+              <li><a href="#changelog">Changelog</a></li>
+              <li><a href="#quick-examples">Quick Examples</a></li>
+              <li><a href="#contributors-">Contributors</a></li>
+            </ul>
+
+            <a
+              href="#features"
+              id="features"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Features</h2>
+            </a>
+            <ul>
+              <li>
+                <b>Persistent Storage</b>: Data stored won&#39;t disappear
+                through restarts.
+              </li>
+              <li>
+                <b>Support for non-javascript/typescript projects</b>: With our
+                API (on development) you can use the database on any project you
+                want.
+              </li>
+              <li>
+                <b>Built for Beginners</b>: Our database is beginner friendly
+                and our docs are straight-foward.
+              </li>
+            </ul>
+
+            <a
+              href="#installation"
+              id="installation"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Installation</h2>
+            </a>
+            <p>Using NPM:</p>
+            <pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">i</span><span class="hl-1"> </span><span class="hl-0">byte</span><span class="hl-1">.</span><span class="hl-0">db</span>
+</code></pre>
+            <p>Installing the dev build:</p>
+            <pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">i</span><span class="hl-1"> </span><span class="hl-2">https</span><span class="hl-1">:</span><span class="hl-3">//github.com/cloudteamdev/ByteDatabase</span>
+</code></pre>
+            <p>
+              <em
+                >If you&#39;re having issues with installing, please read our
+                troubleshooting guide
+                <a
+                  href="https://github.com/cloudteamdev/ByteDatabase/blob/main/docs/troubleshooting.md"
+                  >here</a
+                ></em
+              >
+            </p>
+
+            <a
+              href="#changelog"
+              id="changelog"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Changelog</h2>
+            </a>
+            <p>nothing yet</p>
+
+            <a
+              href="#quick-examples"
+              id="quick-examples"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Quick Examples</h2>
+            </a>
+            <p>in ES6:</p>
+            <pre><code class="language-ts"><span class="hl-4">import</span><span class="hl-1"> { </span><span class="hl-0">ByteDatabase</span><span class="hl-1"> } </span><span class="hl-4">from</span><span class="hl-1"> </span><span class="hl-5">&#39;byte.db&#39;</span><span class="hl-1">;</span>
+</code></pre>
+            <p>in CommonJS:</p>
+            <pre><code class="language-js"><span class="hl-6">const</span><span class="hl-1"> { </span><span class="hl-7">ByteDatabase</span><span class="hl-1"> } = </span><span class="hl-8">require</span><span class="hl-1">(</span><span class="hl-5">&#39;byte.db&#39;</span><span class="hl-1">);</span>
+</code></pre>
+            <p>initialise the database by doing:</p>
+            <pre><code class="language-ts"><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">bytedb</span><span class="hl-1"> = </span><span class="hl-6">new</span><span class="hl-1"> </span><span class="hl-8">ByteDatabase</span><span class="hl-1">();</span><br/><span class="hl-3">// use default path and properties (learn more: https://github.com/cloudteamdev/ByteDatabase/docs/guide.md#properties)</span>
+</code></pre>
+            <p>
+              snippets:<br />
+              ┕ insert:
+            </p>
+            <pre><code class="language-ts"><span class="hl-0">bytedb</span><span class="hl-1">.</span><span class="hl-8">insert</span><span class="hl-1">(</span><span class="hl-5">&#39;hello_world&#39;</span><span class="hl-1">, </span><span class="hl-5">&#39;helloworld&#39;</span><span class="hl-1">); </span><span class="hl-3">// { changes: 1, lastInsertRowid: 1 }</span>
+</code></pre>
+            <p>┕ find:</p>
+            <pre><code class="language-ts"><span class="hl-0">bytedb</span><span class="hl-1">.</span><span class="hl-8">find</span><span class="hl-1">(</span><span class="hl-5">&#39;hello_world&#39;</span><span class="hl-1">); </span><span class="hl-3">// helloworld</span>
+</code></pre>
+            <p>
+              <em
+                >for more detailed examples check out our guide
+                <a
+                  href="https://github.com/cloudteamdev/ByteDatabase/blob/main/docs/guide.md"
+                  >here</a
+                ></em
+              >
+            </p>
+            <p>
+              This database is an official project by the
+              <a href="https://cloudteam.me">CloudTeam</a> and is managed by
+              <a href="https://github.com/avonryle">avonryle#2022</a> in
+              discord. <br />
+            </p>
+
+            <a
+              href="#contributors-✨"
+              id="contributors-✨"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Contributors ✨</h2>
+            </a>
+            <p>
+              This database is an official project by the
+              <a href="https://cloudteam.me">CloudTeam</a> and is managed by
+              <a href="https://github.com/avonryle">avonryle#2022</a> at
+              discord.
+            </p>
+            <p>
+              Thanks goes to these wonderful people who contributed to this
+              project:
+            </p>
+            <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+            <!-- prettier-ignore-start -->
+            <!-- markdownlint-disable -->
+            <table>
+              <tr>
+                <td align="center">
+                  <a href="https://github.com/oriel-beck"
+                    ><img
+                      src="https://avatars.githubusercontent.com/u/72157108?v=4?s=100"
+                      width="100px;"
+                      alt=""
+                    /><br /><sub><b>oriel-beck</b></sub></a
+                  ><br /><a
+                    href="https://github.com/cloudteamdev/ByteDatabase/commits?author=oriel-beck"
+                    title="Code"
+                    >💻</a
+                  >
+                  <a
+                    href="https://github.com/cloudteamdev/ByteDatabase/issues?q=author%3Aoriel-beck"
+                    title="Bug reports"
+                    >🐛</a
+                  >
+                </td>
+              </tr>
+            </table>
+
+            <!-- markdownlint-restore -->
+            <!-- prettier-ignore-end -->
+
+            <!-- ALL-CONTRIBUTORS-LIST:END -->
+          </div>
+        </div>
+        <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+          <nav class="tsd-navigation primary">
+            <ul>
+              <li class="current"><a href="modules.html">Exports</a></li>
+            </ul>
+          </nav>
+          <nav class="tsd-navigation secondary menu-sticky">
+            <ul>
+              <li class="tsd-kind-class tsd-has-type-parameter">
+                <a href="classes/ByteDatabase.html" class="tsd-kind-icon"
+                  >Byte<wbr />Database</a
+                >
+              </li>
+              <li class="tsd-kind-class">
+                <a href="classes/Table.html" class="tsd-kind-icon">Table</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <footer class="with-border-bottom">
+      <div class="container">
+        <h2>Legend</h2>
+        <div class="tsd-legend-group">
+          <ul class="tsd-legend">
+            <li class="tsd-kind-constructor tsd-parent-kind-class">
+              <span class="tsd-kind-icon">Constructor</span>
+            </li>
+            <li class="tsd-kind-property tsd-parent-kind-class">
+              <span class="tsd-kind-icon">Property</span>
+            </li>
+            <li class="tsd-kind-method tsd-parent-kind-class">
+              <span class="tsd-kind-icon">Method</span>
+            </li>
+          </ul>
+          <ul class="tsd-legend">
+            <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private">
+              <span class="tsd-kind-icon">Private property</span>
+            </li>
+            <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private">
+              <span class="tsd-kind-icon">Private method</span>
+            </li>
+          </ul>
+        </div>
+        <h2>Settings</h2>
+        <p>
+          Theme
+          <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </p>
+      </div>
+    </footer>
+    <div class="container tsd-generator">
+      <p>
+        Generated using
+        <a href="https://typedoc.org/" target="_blank">TypeDoc</a>
+      </p>
+    </div>
+    <div class="overlay"></div>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
