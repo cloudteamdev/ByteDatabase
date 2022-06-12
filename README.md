@@ -10,58 +10,7 @@
   </p>
 </div>
 
-## Table of Content
-- [Features](#features)
-- [Installation](#installation)
-- [Changelog](#changelog)
-- [Quick Examples](#quick-examples)
-- [Contributors](#contributors-)
-
-## Features
-- <b>Persistent Storage</b>: Data stored won't disappear through restarts.
-- <b>Support for non-javascript/typescript projects</b>: With our API (on development) you can use the database on any project you want.
-- <b>Built for Beginners</b>: Our database is beginner friendly and our docs are straight-foward.
-
-## Installation
-Using NPM: 
-```
-npm i byte.db
-```
-Installing the dev build:
-```
-npm i https://github.com/cloudteamdev/ByteDatabase
-```
-_If you're having issues with installing, please read our troubleshooting guide [here](https://github.com/cloudteamdev/ByteDatabase/blob/main/docs/troubleshooting.md)_
-
-## Changelog
-nothing yet
-
-## Quick Examples
-in ES6:
-```ts
-import { ByteDatabase } from "byte.db"
-```
-in CommonJS:
-```js
-const { ByteDatabase } = require("byte.db")
-```
-initialise the database by doing: 
-```ts
-const bytedb = new ByteDatabase()
-// use default path and properties (learn more: https://github.com/cloudteamdev/ByteDatabase/docs/guide.md#properties)
-```
-snippets:<br>
-   ┕ insert: 
-   ```ts
-   bytedb.insert("hello_world", "helloworld") // { changes: 1, lastInsertRowid: 1 }
-   ``` 
-   ┕ find:
-   ```ts
-   bytedb.find("hello_world") // helloworld
-   ```
-_for more detailed examples check out our guide [here](https://github.com/cloudteamdev/ByteDatabase/blob/main/docs/guide.md)_
-
-This database is an official project by the [CloudTeam](https://cloudteam.me) and is managed by [avonryle#2022](https://github.com/avonryle) in discord. <br>
+a new and updated readme is coming... v1.2.0 soon
 
 ## Contributors ✨
 This database is an official project by the [CloudTeam](https://cloudteam.me) and is managed by [avonryle#2022](https://github.com/avonryle) at discord.
