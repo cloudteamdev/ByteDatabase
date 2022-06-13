@@ -7,3 +7,12 @@ docs
 
 # big json file, not needed
 package-lock.json
+
+#Github
+.all-contributorsrc
+.gitignore
+.github
+
+#Vscode folder
+.vscode
+
