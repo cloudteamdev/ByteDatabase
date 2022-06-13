@@ -1,2 +1,9 @@
+# no modules needed as they are auto installed
 node_modules
+# source code is not needed just the build is needed
 lib
+# docs are not needed in the npm package
+docs
+
+# big json file, not needed
+package-lock.json
