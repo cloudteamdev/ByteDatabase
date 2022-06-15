@@ -1,18 +1,11 @@
-# no modules needed as they are auto installed
-node_modules
-# source code is not needed just the build is needed
+# Lib: source isn't needed, build(dist) is
 lib
-# docs are not needed in the npm package
-docs
 
-# big json file, not needed
+# Misc: ignore files or folders that the user would not need
+node_modules
 package-lock.json
-
-#Github
-.all-contributorsrc
-.gitignore
-.github
-
-#Vscode folder
+docs
 .vscode
-
+.github
+tsconfig.jsonbuildinfo
+.prettierrc
