@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "JSON Schema for typedoc.json",
+  "type": "object",
+  "properties": {
+    "options": {
+      "description": "Specify a json option file that should be loaded. If not specified TypeDoc will look for 'typedoc.json' in the current directory."
+    },
+    "tsconfig": {
+      "description": "Specify a TypeScript config file that should be loaded. If not specified TypeDoc will look for 'tsconfig.json' in the current directory."
+    },
+    "entryPoints": {
+      "description": "The entry points of your documentation."
+    },
+    "entryPointStrategy": {
+      "description": "The strategy to be used to convert entry points into documentation modules.",
+      "enum": ["Resolve", "Expand", "Packages"],
+      "default": "Resolve"
+    },
+    "exclude": {
+      "description": "Define patterns to be excluded when expanding a directory that was specified as an entry point."
+    },
+    "externalPattern": {
+      "description": "Define patterns for files that should be considered being external."
+    },
+    "excludeExternals": {
+      "description": "Prevent externally resolved symbols from being documented.",
+      "type": "boolean",
+      "default": false
+    },
+    "excludeNotDocumented": {
+      "description": "Prevent symbols that are not explicitly documented from appearing in the results.",
+      "type": "boolean",
+      "default": false
+    },
+    "excludeInternal": {
+      "description": "Prevent symbols that are marked with @internal from being documented.",
+      "type": "boolean",
+      "default": false
+    },
+    "excludePrivate": {
+      "description": "Ignore private variables and methods.",
+      "type": "boolean",
+      "default": false
+    },
+    "excludeProtected": {
+      "description": "Ignore protected variables and methods.",
+      "type": "boolean",
+      "default": false
+    },
+    "searchCategoryBoosts": {
+      "description": "Configure search to give a relevance boost to selected categories"
+    },
+    "searchGroupBoosts": {
+      "description": "Configure search to give a relevance boost to selected kinds (eg \"class\")"
+    },
+    "disableSources": {
+      "description": "Disable setting the source of a reflection when documenting it.",
+      "type": "boolean",
+      "default": false
+    },
+    "includes": {
+      "description": "Specify the location to look for included documents (use [[include:FILENAME]] in comments)."
+    },
+    "media": {
+      "description": "Specify the location with media files that should be copied to the output directory."
+    },
+    "watch": {
+      "description": "Watch files for changes and rebuild docs on change.",
+      "type": "boolean",
+      "default": false
+    },
+    "preserveWatchOutput": {
+      "description": "If set, TypeDoc will not clear the screen between compilation runs.",
+      "type": "boolean",
+      "default": false
+    },
+    "emit": {
+      "description": "Specify what TypeDoc should emit, 'docs', 'both', or 'none'.",
+      "enum": ["true", "false", "both", "docs", "none"],
+      "default": "docs"
+    },
+    "out": {
+      "description": "Specify the location the documentation should be written to."
+    },
+    "json": {
+      "description": "Specify the location and filename a JSON file describing the project is written to."
+    },
+    "pretty": {
+      "description": "Specify whether the output JSON should be formatted with tabs.",
+      "type": "boolean",
+      "default": true
+    },
+    "theme": {
+      "description": "Specify the path to the theme that should be used, or 'default' or 'minimal' to use built-in themes. Note: Not resolved according to the config file location, always resolved according to cwd.",
+      "type": "string",
+      "default": "default"
+    },
+    "lightHighlightTheme": {
+      "description": "Specify the code highlighting theme in light mode.",
+      "type": "string",
+      "default": "light-plus"
+    },
+    "darkHighlightTheme": {
+      "description": "Specify the code highlighting theme in dark mode.",
+      "type": "string",
+      "default": "dark-plus"
+    },
+    "customCss": {
+      "description": "Path to a custom CSS file to for the theme to import."
+    },
+    "name": {
+      "description": "Set the name of the project that will be used in the header of the template.",
+      "type": "string",
+      "default": ""
+    },
+    "includeVersion": {
+      "description": "Add the package version to the project name.",
+      "type": "boolean",
+      "default": false
+    },
+    "excludeTags": {
+      "description": "Remove the listed tags from doc comments.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "readme": {
+      "description": "Path to the readme file that should be displayed on the index page. Pass `none` to disable the index page and start the documentation on the globals page."
+    },
+    "defaultCategory": {
+      "description": "Specify the default category for reflections without a category.",
+      "type": "string",
+      "default": "Other"
+    },
+    "categoryOrder": {
+      "description": "Specify the order in which categories appear. * indicates the relative order for categories not in the list.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "categorizeByGroup": {
+      "description": "Specify whether categorization will be done at the group level.",
+      "type": "boolean",
+      "default": true
+    },
+    "cname": {
+      "description": "Set the CNAME file text, it's useful for custom domains on GitHub Pages.",
+      "type": "string",
+      "default": ""
+    },
+    "sort": {
+      "description": "Specify the sort strategy for documented values.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": ["kind", "instance-first", "alphabetical"]
+    },
+    "gitRevision": {
+      "description": "Use specified revision instead of the last revision for linking to GitHub/Bitbucket source files.",
+      "type": "string",
+      "default": ""
+    },
+    "gitRemote": {
+      "description": "Use the specified remote for linking to GitHub/Bitbucket source files.",
+      "type": "string",
+      "default": "origin"
+    },
+    "gaID": {
+      "description": "Set the Google Analytics tracking ID and activate tracking code.",
+      "type": "string",
+      "default": ""
+    },
+    "gaSite": {
+      "description": "Set the site name for Google Analytics. Defaults to `auto`.",
+      "type": "string",
+      "default": "auto"
+    },
+    "githubPages": {
+      "description": "Generate a .nojekyll file to prevent 404 errors in GitHub Pages. Defaults to `true`.",
+      "type": "boolean",
+      "default": true
+    },
+    "hideGenerator": {
+      "description": "Do not print the TypeDoc link at the end of the page.",
+      "type": "boolean",
+      "default": false
+    },
+    "hideLegend": {
+      "description": "Do not print the Legend for icons at the end of the page.",
+      "type": "boolean",
+      "default": false
+    },
+    "cleanOutputDir": {
+      "description": "If set, TypeDoc will remove the output directory before writing output.",
+      "type": "boolean",
+      "default": true
+    },
+    "showConfig": {
+      "description": "Print the resolved configuration and exit.",
+      "type": "boolean",
+      "default": false
+    },
+    "plugin": {
+      "description": "Specify the npm plugins that should be loaded. Omit to load all installed plugins, set to 'none' to load no plugins."
+    },
+    "logger": {
+      "description": "Specify the logger that should be used, 'none' or 'console'.",
+      "enum": ["console", "none"],
+      "default": "console"
+    },
+    "logLevel": {
+      "description": "Specify what level of logging should be used.",
+      "enum": ["Verbose", "Info", "Warn", "Error"],
+      "default": "Info"
+    },
+    "markedOptions": {
+      "description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc."
+    },
+    "compilerOptions": {
+      "description": "Selectively override the TypeScript compiler options used by TypeDoc."
+    },
+    "treatWarningsAsErrors": {
+      "description": "If set, warnings will be treated as errors.",
+      "type": "boolean",
+      "default": false
+    },
+    "listInvalidSymbolLinks": {
+      "description": "Emit a list of broken symbol {@link navigation} links after documentation generation, DEPRECATED, prefer validation.invalidLink instead.",
+      "type": "boolean",
+      "default": false
+    },
+    "intentionallyNotExported": {
+      "description": "A list of types which should not produce 'referenced but not documented' warnings.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "requiredToBeDocumented": {
+      "description": "A list of reflection kinds that must be documented",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Enum",
+        "EnumMember",
+        "Variable",
+        "Function",
+        "Class",
+        "Interface",
+        "Property",
+        "Method",
+        "Accessor",
+        "TypeAlias"
+      ]
+    },
+    "validation": {
+      "description": "Specify which validation steps TypeDoc should perform on your generated documentation.",
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "notExported": {
+              "type": "boolean"
+            },
+            "invalidLink": {
+              "type": "boolean"
+            },
+            "notDocumented": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      ],
+      "default": {
+        "notExported": true,
+        "invalidLink": false,
+        "notDocumented": false
+      }
+    }
+  }
+}
