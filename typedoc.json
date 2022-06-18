@@ -1,0 +1,6 @@
+{
+  "$schema": "typedoc.schema.json",
+  "entryPoints": ["./lib/index.ts"],
+  "excludeInternal": true,
+  "githubPages": true
+}
