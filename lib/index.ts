@@ -1,4 +1,4 @@
-export * from "./main.ts";
+export * from "./main";
 export * from "./util/constants";
 export * from "./typings";
 export * from "./structures/ByteError";

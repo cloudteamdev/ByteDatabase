@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "prettier": "prettier --write .",
-    "test": "node dist/__tests__/func.js",
+    "test": "echo \"No test files found\" && exit 1",
     "build": "tsc",
     "prepublish": "npm run build",
     "pretest": "npm run build"
