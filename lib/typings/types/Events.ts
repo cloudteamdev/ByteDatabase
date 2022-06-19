@@ -1,3 +1,4 @@
 export type Events = {
-  debug: [Function];
+  dataSet: [data: string];
+  connect: [con: string];
 };
