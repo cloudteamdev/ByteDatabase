@@ -1,11 +1,30 @@
 # Lib: source isn't needed, build(dist) is
 lib
 
-# Misc: ignore files or folders that the user would not need
+# Modules that are needed when testing or used
 node_modules
+# Lock files are not needed 
+# also is a large .json file and can be auto generated
+# @see {https://stackoverflow.com/questions/45052520/do-i-need-both-package-lock-json-and-package-json}
 package-lock.json
+# Documentation is a big folder and is not needed in the package upload
 docs
+# IDE Tools for .vscode
 .vscode
+# github workoverflows and config.
 .github
+# TSCONFIG build info
 tsconfig.jsonbuildinfo
+# Only needed for linting
 .prettierrc
+# Not needed for packaged result
+.all-contributorsrc
+# NPM rc file
+.npmrc
+#.npm cache
+.npm
+
+# Misc: ignore files or folders that the user would not need
+*.tar 
+*.zip
+*.gz

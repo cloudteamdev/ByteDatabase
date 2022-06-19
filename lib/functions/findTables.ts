@@ -1,4 +1,4 @@
-import { ByteDatabase } from '../index';
+import { ByteDatabase } from '../main';
 
 export function findTables(db: ByteDatabase) {
   const tables = db._raw
