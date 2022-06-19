@@ -1,3 +1,6 @@
-export type Data = {
-    [key: PropertyKey]: unknown
-} | string | unknown[]
+export type Data =
+  | {
+      [key: PropertyKey]: unknown;
+    }
+  | string
+  | unknown[];
