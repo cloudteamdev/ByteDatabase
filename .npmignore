@@ -9,3 +9,37 @@ docs
 .github
 tsconfig.jsonbuildinfo
 .prettierrc
+# Lib: source isn't needed, build(dist) is
+lib
+
+# Modules which is needed by the database to work corrrectly and efficiently.
+node_modules
+
+# lock files are not needed by the user
+# @see {https://stackoverflow.com/questions/45052520/do-i-need-both-package-lock-json-and-package-json}
+package-lock.json
+
+# typedoc files takes up storage space so remove it as its also unneeded for the user because you can simply 
+# @see {https://cloudteandev.github.com/ByteDatabase}
+docs
+typedoc.json
+typedoc.schema.json
+
+# github workoverflows and config.
+.github
+
+# TSCONFIG build info
+tsconfig.jsonbuildinfo
+
+# Prettier is only needed for the linting of the database files
+# this is also only the configurations of the formatter
+.prettierrc
+
+# NPM rc and cache
+.npmrc
+.npmrc
+
+# Misc: ignore files or folders that the user would not need
+*.tar 
+*.zip
+*.gz
