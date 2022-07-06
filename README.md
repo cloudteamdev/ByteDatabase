@@ -23,7 +23,7 @@ Install with NPM:
 npm install byte.db
 ```
 <b>Troubleshooting</b>: soon <br>
-<b>Install for deno</b>: soon
+<b>Install for demo</b>: soon
 
 ## Getting started with [DiscordJS](https://github.com/discordjs/discord.js)
 ```ts
